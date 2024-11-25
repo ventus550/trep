@@ -5,10 +5,10 @@ import numpy as np
 import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader
 
-from models import TSEncoder
-from models.task_heads import TembedDivPredHead, TembedCondPredHead, TembedKLPredHeadLinear
-from models.losses import hierarchical_contrastive_loss
-from utils import take_per_row, split_with_nan, centerize_vary_length_series, torch_pad_nan, torch_pad_with
+from .models import TSEncoder
+from .models.task_heads import TembedDivPredHead, TembedCondPredHead, TembedKLPredHeadLinear
+from .models.losses import hierarchical_contrastive_loss
+from .utils import take_per_row, split_with_nan, centerize_vary_length_series, torch_pad_nan, torch_pad_with
 
 class TRep:
     '''The TRep model'''

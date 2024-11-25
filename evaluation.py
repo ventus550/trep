@@ -6,8 +6,8 @@ import numpy as np
 import pandas as pd
 from joblib import Parallel, delayed
 
-from train_eval import train_and_test, Args
-from utils import get_dataset_names
+from .train_eval import train_and_test, Args
+from .utils import get_dataset_names
 
 
 quick_uea_datasets = [
